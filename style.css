@@ -1,0 +1,138 @@
+:root {
+
+  /* COLORS Primary */
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  /* COLOR Gradients (background) */
+
+  --clr-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-light-royal-blue: hsl(241, 81%, 54%);
+
+  /* COLOR Gradients (circle) */
+  --clr-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* COLOR Neutral */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--clr-pale-blue);
+  background: linear-gradient(-25deg, var(--clr-pale-blue) 0%, var(--clr-white) 100%);
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+main {
+  background-color: var(--clr-white);
+  display: grid;
+}
+
+.result, .summary {
+  width: 375px;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.result {
+  background-color: var(--clr-light-slate-blue);
+  background: linear-gradient(0deg, var(--clr-light-royal-blue) 0%, var(--clr-light-slate-blue) 100%);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.result h2 {
+color: var(--clr-light-lavender);
+}
+
+.result .circle {
+  background-color: var(--clr-light-royal-blue);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.result .points {
+  color: var(--clr-white);
+}
+
+.result .of100 {
+  color: var(--clr-light-lavender);
+}
+
+.result h1 {
+  color: var(--clr-white);
+}
+
+.result .text {
+  color: var(--clr-light-lavender);
+  padding: 2rem;
+}
+
+.summary {
+  background-color: var(--clr-white);
+  padding: 1rem 2rem;
+}
+
+.summary .cell {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.summary .reaction {
+  background-color: var(--clr-light-red);
+}
+
+.summary .memory {
+  background-color: var(--clr-orangey-yellow);
+}
+
+.summary .verbal {
+  background-color: var(--clr-green-teal);
+}
+
+.summary .visual {
+  background-color: var(--clr-cobalt-blue);
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: var(--clr-persian-blue);
+  border-radius: 1.2rem;
+}
+
+.attribution { 
+  font-size: 11px; 
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

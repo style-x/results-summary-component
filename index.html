@@ -8,36 +8,49 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+  <main>
+    <div class="result">
+      <h2>Your Result</h2>
+      <div class="circle">
+        <div class="points">76</div>
+        <p class="of100">of 100</p> 
+      </div>
+      <h1>Great</h1>
+      <p class="text">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary">
+      <h2>Summary</h2> 
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+      <div class="cell reaction">
+        <p>Reaction</p>
+        <p><span>80</span> / 100</p>
+      </div>
+      <div class="cell memory">
+        <p>Memory</p>
+        <p><span>92</span> / 100</p>
+      </div>
+      <div class="cell verbal">
+        <p>Verbal</p>
+        <p><span>61</span> / 100</p>
+      </div>
+      <div class="cell visual">
+        <p>Visual</p>
+        <p><span>72</span> / 100</p>
+      </div>
+
+      <button>Continue</button>
   
-  Summary
+    </div>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
