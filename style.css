@@ -2,9 +2,13 @@
 
   /* COLORS Primary */
   --clr-light-red: hsl(0, 100%, 67%);
+  --clr-light-red-bg: hsla(0, 100%, 67%, 10%);
   --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-orangey-yellow-bg: hsl(39, 100%, 56%, 10%);
   --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-green-teal-bg: hsl(166, 100%, 37%, 10%);
   --clr-cobalt-blue: hsl(234, 85%, 45%);
+  --clr-cobalt-blue-bg: hsl(234, 85%, 45%, 10%);
 
   /* COLOR Gradients (background) */
 
@@ -29,6 +33,10 @@
   padding: 0;
   margin: 0;
   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 body {
@@ -69,17 +77,26 @@ color: var(--clr-light-lavender);
 }
 
 .result .circle {
-  background-color: var(--clr-light-royal-blue);
-  padding: 2rem;
+  background: linear-gradient(0deg, var(--clr-light-slate-blue) 0%, var(--clr-light-royal-blue) 100%);
+  width: 9rem;
+  height: 9rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  opacity: 0.5;
 }
 
 .result .points {
   color: var(--clr-white);
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: auto;
 }
 
 .result .of100 {
   color: var(--clr-light-lavender);
+  text-align: center;
 }
 
 .result h1 {
@@ -96,29 +113,63 @@ color: var(--clr-light-lavender);
   padding: 1rem 2rem;
 }
 
+.summary h2 {
+  color: var(--clr-dark-gray-blue);
+  width: 100%;
+}
+
 .summary .cell {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.cell span {
+  color: black;
+  font-weight: 700;
+}
+
+.cell p:last-child {
+  color: var(--clr-dark-gray-blue);
+}
+
+.cell p:first-child {
+  font-weight: 700;
+}
+
 .summary .reaction {
-  background-color: var(--clr-light-red);
+  background-color: var(--clr-light-red-bg);
+}
+
+.reaction > p:first-child {
+  color: var(--clr-light-red);
 }
 
 .summary .memory {
-  background-color: var(--clr-orangey-yellow);
+  background-color: var(--clr-orangey-yellow-bg);
+}
+
+.memory > p:first-child {
+  color: var(--clr-orangey-yellow);
 }
 
 .summary .verbal {
-  background-color: var(--clr-green-teal);
+  background-color: var(--clr-green-teal-bg);
+}
+
+.verbal > p:first-child {
+  color: var(--clr-green-teal);
 }
 
 .summary .visual {
-  background-color: var(--clr-cobalt-blue);
+  background-color: var(--clr-cobalt-blue-bg);
+}
+
+.visual > p:first-child {
+  color: var(--clr-cobalt-blue);
 }
 
 button {
